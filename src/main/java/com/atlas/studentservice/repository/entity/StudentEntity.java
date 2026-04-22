@@ -10,10 +10,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 /**
- * Entity class represents user table in the database
+ * Entity class represents student table in the database
  */
 @Entity // entity annotation marks this class as JPA entity
-@Table(name = "STUDENT_TL") // maps entity to USER_TL TABLE
+@Table(name = "STUDENT_TL") // maps entity to STUDENT_TL TABLE
 public class StudentEntity {
 	@Id // marks primary key
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // using for auto increment
