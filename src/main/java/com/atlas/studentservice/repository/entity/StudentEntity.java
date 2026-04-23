@@ -17,7 +17,7 @@ import jakarta.persistence.Table;
 public class StudentEntity {
 	@Id // marks primary key
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // using for auto increment
-	private Long userID; // unique identification for user
+	private Long studentID; // unique identification for user
 	@Column(name = "FIRST_NAME", length = 50, nullable = false)
 	private String firstName;
 	@Column(name = "LAST_NAME", length = 50, nullable = false)
@@ -30,11 +30,11 @@ public class StudentEntity {
 	private Date dateOfBirth;
 
 	public Long getUserID() {
-		return userID;
+		return studentID;
 	}
 
 	public void setUserID(Long userID) {
-		this.userID = userID;
+		this.studentID = userID;
 	}
 
 	public String getFirstName() {
